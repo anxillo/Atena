@@ -4,30 +4,14 @@
         <meta charset="UTF-8" />
         <title>hello phaser!</title>
         <script src="phaser.min.js"></script>
+        <script type="text/javascript" src="js/boot.js"></script> 
+        <script type="text/javascript" src="js/load.js"></script> 
+        <script type="text/javascript" src="js/menu.js"></script> 
+        <script type="text/javascript" src="js/play.js"></script> 
+        <script type="text/javascript" src="js/game.js"></script>
     </head>
     <body>
-
-    <script type="text/javascript">
-
-    window.onload = function() {
-
-        var game = new Phaser.Game(700, 500, Phaser.AUTO, '', { preload: preload, create: create });
-
-        function preload () {
-            game.load.image('field', 'assets/field.png');
-
-        }
-
-        function create () {
-
-            var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'field');
-            logo.anchor.setTo(0.5, 0.5);
-
-        }
-
-    };
-
-    </script>
+        <div id="gameDiv"> </div>
 
     </body>
 </html>
